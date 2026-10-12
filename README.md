@@ -9,6 +9,10 @@ text, and PDF.
 [original scan]: original_scan.pdf
 [cleuqr.pdf]: cleuqr.pdf
 
+![thumbnail](README.md.d/thumbnail-0.jpg "Cleuseau Quick Reference")
+![thumbnail](README.md.d/thumbnail-1.jpg "Cleuseau Quick Reference")
+
+
 ## Files 
 
 * [cleuqr.pdf][]: The Cleuseau ROM Quick Reference in PDF format.
