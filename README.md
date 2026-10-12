@@ -65,7 +65,7 @@ A few minor changes were made to the document
   * Last line, _and the GOSUB/RETURN stack._, shifted left two more spaces.
 
 * CALLs corrected
-	* `CALL 911` corrected to match Cleuseau documentation:
+  * `CALL 911` corrected to match Cleuseau documentation:
     * Original: _To disable Cleuseau: CALL 911_
     * Replacement: _To access Cleuseau: CALL 911_
   * CALL to disable Cleuseau (`CALL 913,145`) added.
