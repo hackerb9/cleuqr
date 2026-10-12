@@ -13,5 +13,5 @@ CLEUQR.DO: cleuqr.u8
 
 .PHONY: clean
 clean:
-	@rm *.log *.aux *~ 2>/dev/null || true
+	@rm *.log *.aux *~ cleuqr-lst.pdf 2>/dev/null || true
 
