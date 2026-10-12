@@ -1,0 +1,135 @@
+\documentclass[9pt]{article}
+\usepackage[paperheight=8in,paperwidth=3.8in,margin=.3in,heightrounded]{geometry}
+
+% This file includes unicode and requires xelatex or lualatex.
+
+% Thicker arrows (but not for Go Mono which lacks them)
+\usepackage{newunicodechar}
+% \newunicodechar{←}{⇐}
+% \newunicodechar{↑}{⇑}
+% \newunicodechar{↓}{⇓}
+% \newunicodechar{→}{⇒}
+
+\usepackage{listings}
+% NOTE See kludge below to get listings to work with Unicode
+
+%% Show these words as keys. (Does not work with unicode chars!).
+\lstset{
+  emph={CTRL, CTRL_R, CTRL_V, CTRL_J, CTRL_O, CTRL_A,
+    CTRL_Q, CTRL_F, CTRL_T, CTRL_W, CTRL_B, CTRL_Z, CTRL_G, CTRL_P,
+    CTRL_N, CTRL_S, CTRL_Y, CTRL_E, CTRL_L, CTRL_U, CTRL_D, CTRL_X,
+    CTRL_H, CTRL_I, CTRL_C, SHIFT, TAB, BREAK, ESC, ENTER, ↑, ↓, ←, →,
+    CTRL_↑, CTRL_↓, CTRL_←, CTRL_→, SHIFT_↑, SHIFT_↓, SHIFT_←, SHIFT_→,
+    CTRL↑, CTRL↓, CTRL←, CTRL→, SHIFT↑, SHIFT↓, SHIFT←, SHIFT→,
+    F1, F2, F3, F4, F5, F6, F7, F8,
+    BKSP, DEL, LABEL, PRINT, SHIFT_PRINT, PASTE, PAUSE}, 
+  emphstyle=\fbox,
+}
+
+%% Show these keywords as \strong. We use delim because they have punctuation.
+\lstset{ moredelim = [s][keywordstyle]{.PRINT}{\ } }
+\lstset{ moredelim = [s][\strong]{.RENU}{M} }
+\lstset{ moredelim = [s][\strong]{.MOV}{E} }
+\lstset{ moredelim = [s][\strong]{.COP}{Y} }
+\lstset{ moredelim = [s][\strong]{.MI}{N} }
+\lstset{ moredelim = [s][\strong]{.DELCO}{M} }
+\lstset{ moredelim = [s][\strong]{.SQUAS}{H} }
+\lstset{ moredelim = [s][\strong]{.PAC}{K} }
+\lstset{ moredelim = [s][\strong]{.EXPAN}{D} }
+\lstset{ moredelim = [s][\strong]{.KIL}{L} }
+\lstset{ moredelim = [s][\strong]{.STO}{P} }
+\lstset{ moredelim = [s][\strong]{.CON}{T} }
+\lstset{ moredelim = [s][\strong]{.OF}{F} }
+\lstset{ moredelim = [s][\strong]{.LO}{G} }
+\lstset{ moredelim = [s][\strong]{.LLO}{G} }
+\lstset{ moredelim = [s][\strong]{.FILE}{S} }
+\lstset{ moredelim = [s][\strong]{.LFILE}{S} }
+\lstset{ moredelim = [s][\strong]{.LIS}{T} }
+\lstset{ moredelim = [s][\strong]{.LLIS}{T} }
+\lstset{ moredelim = *[s][\strong]{[}{]} }   % Options like TO and STEP 
+\lstset{ moredelim = [s][\strong]{.STE}{P} }
+\lstset{ moredelim = [s][\strong]{(dot}{)} } 
+\lstset{ moredelim = [s][\strong]{RU}{N} }
+\lstset{ moredelim = [s][\strong]{=X}{=} }
+\lstset{ moredelim = [s][\strong]{=GOSUB}{1000} }
+\lstset{ moredelim = [s][\strong]{\ Y}{\ } } 
+\lstset{ moredelim = [s][\strong]{\ 99}{\ } } 
+\lstset{ moredelim = [s][\strong]{CALL}{\ } } 
+\lstset{ moredelim = [s][\strong]{63012}{\ } } 
+\lstset{ moredelim = [s][\strong]{61167,2}{\ } } 
+\lstset{ moredelim = [s][\strong]{EXEC}{\ } } 
+\lstset{ moredelim = [s][\strong]{62393}{\ } } 
+\lstset{ moredelim = [s][\strong]{911}{\ } } 
+\lstset{ moredelim = [s][\strong]{913}{\ } } 
+\lstset{ moredelim = [s][\strong]{921}{\ } } 
+\lstset{ moredelim = [s][\strong]{1124}{\ } } 
+
+%% Options are in bold, italics 
+\DeclareEmphSequence{\bfseries\itshape}
+\lstset{ emph={[2]n}, emphstyle={[2]\emph} }
+\lstset{ moredelim = [s][\emph]{<}{>} }
+
+%% Subheadings are underlined
+\lstset{ emph={[3]Filing, Mode, setting, Moving, Character, editing,
+    Searching, replacing, Selecting, pasting, Miscellaneous, Editing,
+    Debugging, }, emphstyle={[3]\underbar} }
+
+%% Headings get printed slightly larger
+\lstset{ emph={[4]CLEUSEAU, TEXT, BASIC, examples, INSPECTOR,
+    GETTING, STARTED, MENU},
+  emphstyle={[4]\large} }
+
+%% Hide the line of dashes under headings by painting them white.
+%% (Should be able to remove them with [il], but the entire document disappears.
+\lstset{ comment=[l]{---}, commentstyle={\color{white}} } 
+
+\lstset{ formfeed={\newpage} }
+
+
+\usepackage{fancyvrb}
+
+
+% fontspec requires lualatex or xelatex, not pdflatex
+\usepackage{fontspec}
+\setmainfont{Go Mono}
+\setmonofont{Go Mono}
+
+
+% A box outline for keys like CTRL 
+\fboxsep=1.5pt
+\usepackage{xcolor}
+\renewcommand\fbox{\bf\fcolorbox{olive}{white}}
+
+% Ugly kludge to make unicode work in listings environment
+\makeatletter
+\lst@InputCatcodes
+\def\lst@DefEC{%
+ \lst@CCECUse \lst@ProcessLetter
+ % Put Unicode characters to allow here:
+  ▒▄
+  ↑↓←→
+  ^^00}
+\lst@RestoreCatcodes
+\makeatother
+
+         % ▒ 2592 medium shade
+         % ▄ 2584 lower half block
+
+
+\begin{document}
+\tt
+
+\linespread{0.5}\selectfont
+{
+  \VerbatimInput[lastline=1]{cleuqr.u8}
+  \vfil
+  \VerbatimInput[firstline=2,lastline=6]{cleuqr.u8}
+  \vskip .25in
+  \VerbatimInput[firstline=7,lastline=15]{cleuqr.u8}
+  \vfil
+  \VerbatimInput[firstline=16,lastline=21]{cleuqr.u8}
+  \lstinputlisting[firstline=23]{cleuqr.u8}
+  \vfil
+}
+
+\end{document}
