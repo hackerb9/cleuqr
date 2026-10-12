@@ -21,7 +21,9 @@ available UTF-8 text, M100 text, and PDF.
   the TRS-80 Model 100 and Tandy 200 computers. 
 
 * [original_scan.pdf](original_scan.pdf): A scan of the original quick
-  reference sheet from 1985. It is hard to read and has a couple typos.
+  reference sheet from 1985. It is hard to read and has a couple
+  typos. Note that due to errors in the PDF file's metadata, it cannot
+  be viewed on GitHub and will need to be downloaded.
 
 [cleuqr.u8]: cleuqr.u8
 [CLEUQR.DO]: CLEUQR.DO
