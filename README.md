@@ -3,8 +3,8 @@
 [cleuqr.pdf][] is a recreation of the quick reference pamphlet for
 Polar Engineering's ROM2/Cleuseau option rom for the TRS-80 Model
 100/102, Tandy 200, and NEC PC-8201. The [original scan][] was hard to
-read so hackerb9 retyped it and made it available UTF-8 text, M100
-text, and PDF.
+read so hackerb9 retyped it and made it available as [UTF-8
+text](cleuqr.u8), [M100 text](CLEUQR.DO), and [PDF](cleuqr.pdf).
 
 [original scan]: original_scan.pdf
 [cleuqr.pdf]: cleuqr.pdf
