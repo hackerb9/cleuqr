@@ -170,7 +170,7 @@ cold restart:
     "Cleuseau" will appear in the
     lower right corner of the menu.
 
-To access Cleuseau:
+To access ROM2:
 
     M100    CALL 911
     T200    CALL 921,2
