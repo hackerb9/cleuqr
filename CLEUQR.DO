@@ -231,9 +231,19 @@ To list all lines that assign X a value
     .LIST =X=
 
 
+To stop before any assignment to X:
+
+    .STOP =X=
+
+
 To list all lines that GOSUB 1000:
 
     .LIST =GOSUB 1000
+
+
+To log program execution for lines 0-999
+
+    .PRINT -999
 
 
 To trace program execution on printer:
