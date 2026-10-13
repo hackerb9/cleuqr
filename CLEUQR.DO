@@ -248,7 +248,7 @@ To list all lines that GOSUB 1000:
 
 To log entire program execution:
 
-    .PRINT
+    .PRINT 
 
 
 To log execution for lines 0 to 999:
