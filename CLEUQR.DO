@@ -181,34 +181,6 @@ restarted or removed:
                   ____
 
                     
-             BASIC examples
-
-
-To reduce a program to its minimum size
-
-    .MIN [<num>]
-    Sure? Y
-
-    where <num> is the maximum line
-    length desired.
-
-
-To list all lines that assign X a value
-
-    .LIST =X=
-
-
-To list all lines that GOSUB 1000:
-
-    .LIST =GOSUB 1000
-
-
-To trace program execution on printer:
-
-    .LLOG
-    .PRINT
-    RUN
-
              TEXT examples
 
 
@@ -243,6 +215,33 @@ To replace & search, checking each time
 
     Use F1 and F4 to control the
     search direction.
+
+             BASIC examples
 
+
+To reduce a program to its minimum size
+
+    .MIN [<num>]
+    Sure? Y
+
+    where <num> is the maximum line
+    length desired.
+
+
+To list all lines that assign X a value
+
+    .LIST =X=
+
+
+To list all lines that GOSUB 1000:
+
+    .LIST =GOSUB 1000
+
+
+To trace program execution on printer:
+
+    .LLOG
+    .PRINT
+    RUN
 
 ---------------------------------------
