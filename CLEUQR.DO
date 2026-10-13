@@ -226,14 +226,19 @@ To reduce a program to its minimum size
     length desired.
 
 
-To list all lines that assign X a value
+To stop before executing line 10000:
 
-    .LIST =X=
-
+    .STOP 10000
+    
 
 To stop before any assignment to X:
 
     .STOP =X=
+
+
+To list all lines that assign X a value
+
+    .LIST =X=
 
 
 To list all lines that GOSUB 1000:
@@ -241,9 +246,20 @@ To list all lines that GOSUB 1000:
     .LIST =GOSUB 1000
 
 
-To log program execution for lines 0-999
+To log entire program execution:
+
+    .PRINT
+
+
+To log execution for lines 0 to 999:
 
     .PRINT -999
+
+
+Log lines that start or end a FOR loop:
+
+    .PRINT =FOR
+    .PRINT =NEXT
 
 
 To trace program execution on printer:
@@ -251,5 +267,15 @@ To trace program execution on printer:
     .LLOG
     .PRINT
     RUN
+
+
+To change all stop pts to continue pts:
+
+    .CONT =|
+
+
+To change all print pts to continue pts:
+
+    .CONT =_
 
 ---------------------------------------
