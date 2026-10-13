@@ -178,9 +178,6 @@ restarted or removed:
     NEC     EXEC 1124,145
 
 
-                  ____
-
-                    
              TEXT examples
 
 
