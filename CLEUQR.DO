@@ -277,5 +277,3 @@ To change all stop pts to continue pts:
 To change all print pts to continue pts:
 
     .CONT =_
-
----------------------------------------
