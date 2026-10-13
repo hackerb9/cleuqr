@@ -170,15 +170,6 @@ cold restart:
     "Cleuseau" will appear in the
     lower right corner of the menu.
 
-To access ROM2:
-
-    M100    CALL 911
-    T200    CALL 921,2
-    NEC     EXEC 1124
-
-    The CMD> prompt will be shown.
-    Use ? for help.
-
 To disable Cleuseau, as if it were cold
 restarted or removed:
 
@@ -186,38 +177,8 @@ restarted or removed:
     T200    CALL 921,146
     NEC     EXEC 1124,145
 
-
                   ____
 
-                    
-             BASIC examples
-
-
-To reduce a program to its minimum size
-
-    .MIN [<num>]
-    Sure? Y
-
-    where <num> is the maximum line
-    length desired.
-
-
-To list all lines that assign X a value
-
-    .LIST =X=
-
-
-To list all lines that GOSUB 1000:
-
-    .LIST =GOSUB 1000
-
-
-To trace program execution on printer:
-
-    .LLOG
-    .PRINT
-    RUN
-
              TEXT examples
 
 
@@ -252,6 +213,33 @@ To replace & search, checking each time
 
     Use F1 and F4 to control the
     search direction.
+
+             BASIC examples
 
+
+To reduce a program to its minimum size
+
+    .MIN [<num>]
+    Sure? Y
+
+    where <num> is the maximum line
+    length desired.
+
+
+To list all lines that assign X a value
+
+    .LIST =X=
+
+
+To list all lines that GOSUB 1000:
+
+    .LIST =GOSUB 1000
+
+
+To trace program execution on printer:
+
+    .LLOG
+    .PRINT
+    RUN
 
 ---------------------------------------
