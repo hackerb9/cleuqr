@@ -170,13 +170,6 @@ cold restart:
     "Cleuseau" will appear in the
     lower right corner of the menu.
 
-To disable Cleuseau, as if it were cold
-restarted or removed:
-
-    M100    CALL 913,145
-    T200    CALL 921,146
-    NEC     EXEC 1124,145
-
 To access ROM2:
 
     M100    CALL 911
@@ -185,6 +178,13 @@ To access ROM2:
 
     The CMD> prompt will be shown.
     Use ? for help.
+
+To disable Cleuseau, as if it were cold
+restarted or removed:
+
+    M100    CALL 913,145
+    T200    CALL 921,146
+    NEC     EXEC 1124,145
 
 
                   ____
