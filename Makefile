@@ -2,7 +2,7 @@ default: cleuqr.pdf CLEUQR.DO
 
 cleuqr.pdf: cleuqr.ltx cleuqr-lst.pdf
 	xelatex cleuqr.ltx
-# This should actually only run if cleuqr.u8 has been committed more recently.
+# This should only run if cleuqr.u8/ltx has been COMMITTED more recently.
 #	git commit cleuqr.pdf -m "Cleuseau Quick Reference PDF automatically generated from cleuqr.u8"
 
 cleuqr-lst.pdf:  cleuqr-lst.ltx cleuqr.u8
@@ -10,7 +10,7 @@ cleuqr-lst.pdf:  cleuqr-lst.ltx cleuqr.u8
 
 CLEUQR.DO: cleuqr.u8
 	iconv -f utf-8 -t ./tandy-200.charmap <cleuqr.u8 >CLEUQR.DO
-# This should actually only run if cleuqr.u8 has been committed more recently.
+# Can I do dependencies on whether files have been committed?
 #	git commit CLEUQR.DO -m "M100 encoded text file automatically converted from cleuqr.u8"
 
 .PHONY: clean
