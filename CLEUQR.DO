@@ -170,15 +170,6 @@ cold restart:
     "Cleuseau" will appear in the
     lower right corner of the menu.
 
-To access ROM2:
-
-    M100    CALL 911
-    T200    CALL 921,2
-    NEC     EXEC 1124
-
-    The CMD> prompt will be shown.
-    Use ? for help.
-
 To disable Cleuseau, as if it were cold
 restarted or removed:
 
