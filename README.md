@@ -33,16 +33,92 @@ text](cleuqr.u8), [M100 text](CLEUQR.DO), and [PDF](cleuqr.pdf).
 [cleuqr.u8]: cleuqr.u8
 [CLEUQR.DO]: CLEUQR.DO
 
-## Errata corrected
+## Additions and corrections
 
-A few minor changes were made to the document
+A few changes were made from the original document. The largest
+difference being the the addition of more examples of using the BASIC
+Inspector.
 
 <details>
 
-* ASCII art title modified to fit better on a 40x8 (Model 100) or
-  40x16 (Tandy 200) screen.
+* Added some of the BASIC Inspector examples that were in the full
+  manual but not on the Quick Reference. 
   
-* Creator, date, and ASCII art of Inspector Jacques Clouseau added.
+  * To stop before executing line 10000: `.STOP 10000`
+  * To stop before any assignment to X: `.STOP =X=`
+  * To log entire program execution: `.PRINT`
+  * To log execution for lines 0 to 999: `.PRINT -999`
+  * Log lines that start or end a FOR loop: `.PRINT =FOR` `.PRINT =NEXT`
+  * To change all stop pts to continue pts: `.CONT =|`
+  * To remove all break points: `.OFF`
+
+* CALLs corrected, added
+  * `CALL 911` is to access ROM2's "CMD>" prompt, not disable Cleuseau.
+    * Original: _To disable Cleuseau: CALL 911_
+    * Replacement: _To disable Cleuseau: CALL 913,145_
+  * Tandy 200 CALLs / NEC EXECs added.
+
+* Was this document originally written on a Model 100? While
+  transcribing, I noticed that nearly every line fits in 39 or fewer
+  characters. Long lines have inconsistencies, like droppping spaces,
+  to make them fit.
+
+  However, some lines that were more than 40 characters. To make the
+  file readable on a Model T, I only needed to modify two sections:
+  
+  1. On the page titled "BASIC Inspector Quick Reference" all lines
+     were reduced by two dots (`..`) and the final line, "_and the
+     GOSUB/RETURN stack._", was shifted left two additional spaces.
+
+  2. The cover page was originally an ASCII art title made of
+     asterisks typed on an 80 column piece of paper — perhaps output
+     from the UNIX System V banner program — and rotated 90 degrees to
+     fit. As can be seen by the faint line from the edge of the paper,
+     the rotation was done by literal cut-and-paste and then xeroxing
+     to composite.[^1][TIP: The trick to not having lines show when
+     xeroxing is to use Wite-Out™ on the cut edges.]
+
+		  ****     **       ******   **    **     ****     ******     ****     **    **
+		 ******    **       ******   **    **    ******    ******    ******    **    **
+		***  ***   **       **       **    **   ***  ***   **       ***  ***   **    **
+		**    **   **       **       **    **   **    **   **       **    **   **    **
+		**         **       **       **    **   ***        **       **    **   **    **
+		**         **       **       **    **    ***       **       **    **   **    **
+		**         **       *****    **    **     ***      *****    ********   **    **
+		**         **       *****    **    **      ***     *****    ********   **    **
+		**         **       **       **    **       ***    **       **    **   **    **
+		**         **       **       **    **        ***   **       **    **   **    **
+		**    **   **       **       **    **   **    **   **       **    **   **    **
+		***  ***   **       **       ***  ***   ***  ***   **       **    **   ***  ***
+		 ******    ******   ******    ******     ******    ******   **    **    ****** 
+		  ****     ******   ******     ****       ****     ******   **    **     ****     
+
+	 To make a 40-column replacement, I used a modern UNIX banner
+     program, `figlet -f pagga CLEUSEAU`, to create a title made of
+     Unicode block drawing characters that the Model 100 can also
+     display. 
+
+		░█▀▀░█░░░█▀▀░█░█░█▀▀░█▀▀░█▀█░█░█
+		░█░░░█░░░█▀▀░█░█░▀▀█░█▀▀░█▀█░█░█
+		░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
+
+	The subtitle was made using figlet as well, `figlet -f mini -w 30
+     TEXT EDITOR and BASIC INSPECTOR`. It doesn't look as good on my
+     Tandy 200, but it is legible. 
+
+		____ ___  _ _ _______  _
+		 ||_\/|  |_| \ |  |/ \|_) 
+		 ||_/\|  |_|_/_|_ |\_/| \ 
+
+				   _      _____ _ 
+		 _.._  _| |_) /\ (_  | /
+		(_|| |(_| |_)/--\__)_|_\_ 
+
+		___     __ _  _ _____  _
+		 | |\ |(_ |_)|_/  |/ \|_) 
+		_|_| \|__)|  |_\_ |\_/| \ 
+
+* Added company name and guessed copyright date. 
 
 * `^L` (Form Feed) added between pages.
 
@@ -60,15 +136,16 @@ A few minor changes were made to the document
     * Original: _Move to end of line (right)_
 	* Replacement:  _Move to end of line_
 
-* Ensure that all lines have less than 40 characters to fit on M100 screen.
-  * All lines on BASIC INSPECTOR page reduced by two dots (`..`).
-  * Last line, _and the GOSUB/RETURN stack._, shifted left two more spaces.
-
-* CALLs corrected
-  * `CALL 911` corrected to match Cleuseau documentation:
-    * Original: _To disable Cleuseau: CALL 911_
-    * Replacement: _To access Cleuseau: CALL 911_
-  * CALL to disable Cleuseau (`CALL 913,145`) added.
-  * Tandy 200 CALL, NEC EXEC variants added.
+* For fun I created an ASCII art depiction of Inspector Jacques
+  Clouseau on my Tandy 200. It had to get all the salient details: big
+  nose, moustache, magnifying glass, half-lidded eye, pointy hat, and
+  round chin, yet be less than 7 lines high. I'm pleased with the result.
+  
+						  _ 
+					   -=== 
+					   /e
+					_ (__ 
+				   (_)  ^ 
+					 \  `-´ 
 
 </details>
