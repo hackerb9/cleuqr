@@ -78,45 +78,45 @@ Inspector.
      to composite.[^1][TIP: The trick to not having lines show when
      xeroxing is to use Wite-Out™ on the cut edges.]
 
-		  ****     **       ******   **    **     ****     ******     ****     **    **
-		 ******    **       ******   **    **    ******    ******    ******    **    **
-		***  ***   **       **       **    **   ***  ***   **       ***  ***   **    **
-		**    **   **       **       **    **   **    **   **       **    **   **    **
-		**         **       **       **    **   ***        **       **    **   **    **
-		**         **       **       **    **    ***       **       **    **   **    **
-		**         **       *****    **    **     ***      *****    ********   **    **
-		**         **       *****    **    **      ***     *****    ********   **    **
-		**         **       **       **    **       ***    **       **    **   **    **
-		**         **       **       **    **        ***   **       **    **   **    **
-		**    **   **       **       **    **   **    **   **       **    **   **    **
-		***  ***   **       **       ***  ***   ***  ***   **       **    **   ***  ***
-		 ******    ******   ******    ******     ******    ******   **    **    ****** 
-		  ****     ******   ******     ****       ****     ******   **    **     ****     
+          ****     **       ******   **    **     ****     ******     ****     **    **
+         ******    **       ******   **    **    ******    ******    ******    **    **
+        ***  ***   **       **       **    **   ***  ***   **       ***  ***   **    **
+        **    **   **       **       **    **   **    **   **       **    **   **    **
+        **         **       **       **    **   ***        **       **    **   **    **
+        **         **       **       **    **    ***       **       **    **   **    **
+        **         **       *****    **    **     ***      *****    ********   **    **
+        **         **       *****    **    **      ***     *****    ********   **    **
+        **         **       **       **    **       ***    **       **    **   **    **
+        **         **       **       **    **        ***   **       **    **   **    **
+        **    **   **       **       **    **   **    **   **       **    **   **    **
+        ***  ***   **       **       ***  ***   ***  ***   **       **    **   ***  ***
+         ******    ******   ******    ******     ******    ******   **    **    ****** 
+          ****     ******   ******     ****       ****     ******   **    **     ****     
 
-	 To make a 40-column replacement, I used a modern UNIX banner
+     To make a 40-column replacement, I used a modern UNIX banner
      program, `figlet -f pagga CLEUSEAU`, to create a title made of
      Unicode block drawing characters that the Model 100 can also
      display. 
 
-		░█▀▀░█░░░█▀▀░█░█░█▀▀░█▀▀░█▀█░█░█
-		░█░░░█░░░█▀▀░█░█░▀▀█░█▀▀░█▀█░█░█
-		░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
+        ░█▀▀░█░░░█▀▀░█░█░█▀▀░█▀▀░█▀█░█░█
+        ░█░░░█░░░█▀▀░█░█░▀▀█░█▀▀░█▀█░█░█
+        ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
 
-	The subtitle was made using figlet as well, `figlet -f mini -w 30
+    The subtitle was made using figlet as well, `figlet -f mini -w 30
      TEXT EDITOR and BASIC INSPECTOR`. It doesn't look as good on my
      Tandy 200, but it is legible. 
 
-		____ ___  _ _ _______  _
-		 ||_\/|  |_| \ |  |/ \|_) 
-		 ||_/\|  |_|_/_|_ |\_/| \ 
+        ____ ___  _ _ _______  _
+         ||_\/|  |_| \ |  |/ \|_) 
+         ||_/\|  |_|_/_|_ |\_/| \ 
 
-				   _      _____ _ 
-		 _.._  _| |_) /\ (_  | /
-		(_|| |(_| |_)/--\__)_|_\_ 
+                   _      _____ _ 
+         _.._  _| |_) /\ (_  | /
+        (_|| |(_| |_)/--\__)_|_\_ 
 
-		___     __ _  _ _____  _
-		 | |\ |(_ |_)|_/  |/ \|_) 
-		_|_| \|__)|  |_\_ |\_/| \ 
+        ___     __ _  _ _____  _
+         | |\ |(_ |_)|_/  |/ \|_) 
+        _|_| \|__)|  |_\_ |\_/| \ 
 
 * Added company name and guessed copyright date. 
 
@@ -125,27 +125,27 @@ Inspector.
 * SHIFT/CTRL plus ←/→ descriptions clarified.
   * SHIFT ← 
     * Original: _Move to start of word (left)_
-	* Replacement:  _Move to start of word (prev)_
+    * Replacement:  _Move to start of word (prev)_
   * CTRL ← 
     * Original: _Move to end of line (left)_
-	* Replacement:  _Move to start of line_
+    * Replacement:  _Move to start of line_
   * SHIFT →
     * Original: _Move to start of word (right)_
-	* Replacement:  _Move to start of word (next)_
+    * Replacement:  _Move to start of word (next)_
   * CTRL →
     * Original: _Move to end of line (right)_
-	* Replacement:  _Move to end of line_
+    * Replacement:  _Move to end of line_
 
 * For fun I created an ASCII art depiction of Inspector Jacques
   Clouseau on my Tandy 200. It had to get all the salient details: big
   nose, moustache, magnifying glass, half-lidded eye, pointy hat, and
   round chin, yet be less than 7 lines high. I'm pleased with the result.
   
-						  _ 
-					   -=== 
-					   /e
-					_ (__ 
-				   (_)  ^ 
-					 \  `-´ 
+                          _ 
+                       -=== 
+                       /e
+                    _ (__ 
+                   (_)  ^ 
+                     \  `-´ 
 
 </details>
