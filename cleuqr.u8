@@ -274,6 +274,6 @@ To change all stop pts to continue pts:
     .CONT =|
 
 
-To change all print pts to continue pts:
+To remove all break points:
 
-    .CONT =_
+    .OFF
