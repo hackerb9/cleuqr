@@ -63,8 +63,8 @@ Inspector.
   characters. Long lines have inconsistencies, like droppping spaces,
   to make them fit.
 
-  However, some lines that were more than 40 characters. To make the
-  file readable on a Model T, I only needed to modify two sections:
+  However, some lines were more than 40 characters. To make the file
+  readable on a Model T, I only needed to modify two sections:
   
   1. On the page titled "BASIC Inspector Quick Reference" all lines
      were reduced by two dots (`..`) and the final line, "_and the
