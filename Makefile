@@ -13,6 +13,8 @@ CLEUQR.DO: cleuqr.u8
 # Can I do dependencies on whether files have been committed?
 #	git commit CLEUQR.DO -m "M100 encoded text file automatically converted from cleuqr.u8"
 
+######################################################################
+
 # Use ImageMagick to create thumbnails of the pages 
 thumbnails: 
 	convert -background white -alpha background -alpha off cleuqr.pdf -geometry 320x README.md.d/thumbnail.jpg
