@@ -1,10 +1,10 @@
 # Cleuseau Quick Reference
 
 [cleuqr.pdf][] is a recreation of the quick reference pamphlet for
-Polar Engineering's ROM2/Cleuseau option rom for the TRS-80 Model
-100/102, Tandy 200, and NEC PC-8201. The [original scan][] was hard to
-read so hackerb9 retyped it and made it available as [UTF-8
-text](cleuqr.u8), [M100 text](CLEUQR.DO), and [PDF](cleuqr.pdf).
+Polar Engineering's Cleuseau option rom for the TRS-80 Model 100/102,
+Tandy 200, and NEC PC-8201. The [original scan][] was hard to read so
+hackerb9 retyped it and made it available as [UTF-8 text](cleuqr.u8),
+[M100 text](CLEUQR.DO), and [PDF](cleuqr.pdf).
 
 [original scan]: original_scan.pdf
 [cleuqr.pdf]: cleuqr.pdf
@@ -33,13 +33,36 @@ text](cleuqr.u8), [M100 text](CLEUQR.DO), and [PDF](cleuqr.pdf).
 [cleuqr.u8]: cleuqr.u8
 [CLEUQR.DO]: CLEUQR.DO
 
+## A sidenote about ROM2 vs. Cleuseau
+
+This quick reference is only for Cleuseau, not ROM2.
+
+<details><ul>
+
+Cleuseau was sometimes bundled with another option ROM named, somewhat
+confusingly, "ROM2". As a unit, they were usually referred to as
+"ROM2/Cleuseau" or "R2C". While Cleuseau primarily focuses on
+improvements to BASIC debugging, ROM2 is primarily for assembly
+language, including the ability to enable 8085 simulation for
+debugging. There is some overlap, for example both give you the
+ability to renumber the lines of a BASIC program and to list the files
+with sizes.
+
+ROM2 also included a library of assembly language routines intended to
+extend the ones provided in the original BASIC ROM. However, to add to
+the confusion, there is also an option ROM called "ROM2/Cleuseau
+Developer's Edition" which omits those routines in order to fit in 16K
+instead of the full 32K.
+
+</ul></details>
+
 ## Additions and corrections
 
 A few changes were made from the original document. The largest
 difference being the the addition of more examples of using the BASIC
 Inspector.
 
-<details>
+<details><ul>
 
 * Added some of the BASIC Inspector examples that were in the full
   manual but not on the Quick Reference. 
@@ -150,4 +173,4 @@ Inspector.
                    (_)  ^ 
                      \  `-´ 
 
-</details>
+</ul></details>
