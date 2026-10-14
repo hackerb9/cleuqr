@@ -91,7 +91,7 @@ Inspector.
         **    **   **       **       **    **   **    **   **       **    **   **    **
         ***  ***   **       **       ***  ***   ***  ***   **       **    **   ***  ***
          ******    ******   ******    ******     ******    ******   **    **    ****** 
-          ****     ******   ******     ****       ****     ******   **    **     ****     
+          ****     ******   ******     ****       ****     ******   **    **     **** 
 
      To make a 40-column replacement, I used a modern UNIX banner
      program, `figlet -f pagga CLEUSEAU`, to create a title made of
