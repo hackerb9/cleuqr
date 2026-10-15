@@ -48,11 +48,10 @@ debugging. There is some overlap, for example both give you the
 ability to renumber the lines of a BASIC program and to list the files
 with sizes.
 
-ROM2 also included a library of assembly language routines intended to
-extend the ones provided in the original BASIC ROM. However, to add to
-the confusion, there is also an option ROM called "ROM2/Cleuseau
-Developer's Edition" which omits those routines in order to fit in 16K
-instead of the full 32K.
+To add to the confusion, there is also an option ROM called
+"ROM2/Cleuseau Developer's Version" ("R2CD") which removes some
+features and adds others. It uses different CALLs to initialize and
+remove the ROM. This Quick Reference guide does not cover R2CD.
 
 </ul></details>
 
